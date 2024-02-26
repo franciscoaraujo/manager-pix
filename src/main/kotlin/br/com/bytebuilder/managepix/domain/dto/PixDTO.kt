@@ -77,6 +77,9 @@ data class PixDTO(
         return mensagem
     }
 
+    fun setStatusPix(statusPix: Boolean?) {
+        this.statusPix = statusPix
+    }
     fun setMensagem(mensagem: List<MensagemDTO>?) {
         this.mensagem = mensagem
     }

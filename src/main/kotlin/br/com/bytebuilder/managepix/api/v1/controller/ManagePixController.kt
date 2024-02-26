@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController
 class ManagePixController (private val managePixService: ManagePixService) {
 
     @GetMapping
-    fun hello() = "It's to work"
+    fun hello() = "It's work"
 
     @PostMapping("cadastro")
     fun createPix(@RequestBody  pix: PixDTO): PixDTO {

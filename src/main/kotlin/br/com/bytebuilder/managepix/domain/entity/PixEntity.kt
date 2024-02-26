@@ -68,4 +68,7 @@ class PixEntity {
         return cdChavePix
     }
 
+    fun setStatusPix(statusPix: Boolean?) {
+        this.statusPix = statusPix
+    }
 }
