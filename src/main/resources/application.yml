@@ -1,0 +1,18 @@
+server:
+  port: 8080
+  contextPath: /manage-pix
+  servlet:
+    enabled: true
+    contextPath: /manage-pix
+
+spring:
+  datasource:
+    driverClassName: org.postgresql.Driver
+    password: root
+    url: jdbc:postgresql://localhost:5432/postgres?createDatabaseIfNotExist=true
+    username: postgres
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update

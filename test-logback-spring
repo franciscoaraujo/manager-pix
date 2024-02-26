@@ -1,0 +1,79 @@
+1029 [main] INFO  b.c.b.m.ManagePixApplicationKt -- Starting ManagePixApplicationKt using Java 19.0.2 with PID 31324 (E:\User\francisco\git\manage-pix\build\classes\kotlin\main started by Francisco Araujo in E:\User\francisco\git\manage-pix) 
+1029 [main] INFO  b.c.b.m.ManagePixApplicationKt -- Starting ManagePixApplicationKt using Java 19.0.2 with PID 31324 (E:\User\francisco\git\manage-pix\build\classes\kotlin\main started by Francisco Araujo in E:\User\francisco\git\manage-pix) 
+1031 [main] DEBUG b.c.b.m.ManagePixApplicationKt -- Running with Spring Boot v3.2.3, Spring v6.1.4 
+1031 [main] DEBUG b.c.b.m.ManagePixApplicationKt -- Running with Spring Boot v3.2.3, Spring v6.1.4 
+1032 [main] INFO  b.c.b.m.ManagePixApplicationKt -- No active profile set, falling back to 1 default profile: "default" 
+1032 [main] INFO  b.c.b.m.ManagePixApplicationKt -- No active profile set, falling back to 1 default profile: "default" 
+2549 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -- Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2650 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate -- Finished Spring Data repository scanning in 86 ms. Found 1 JPA repository interface. 
+3715 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -- Tomcat initialized with port 8080 (http) 
+3733 [main] INFO  o.a.coyote.http11.Http11NioProtocol -- Initializing ProtocolHandler ["http-nio-8080"] 
+3736 [main] INFO  o.a.catalina.core.StandardService -- Starting service [Tomcat] 
+3736 [main] INFO  o.a.catalina.core.StandardEngine -- Starting Servlet engine: [Apache Tomcat/10.1.19] 
+3960 [main] INFO  o.a.c.c.C.[.[.[/manage-pix] -- Initializing Spring embedded WebApplicationContext 
+3966 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext -- Root WebApplicationContext: initialization completed in 2805 ms 
+4337 [main] INFO  o.h.jpa.internal.util.LogHelper -- HHH000204: Processing PersistenceUnitInfo [name: default] 
+4538 [main] INFO  org.hibernate.Version -- HHH000412: Hibernate ORM core version 6.4.4.Final 
+4599 [main] INFO  o.h.c.i.RegionFactoryInitiator -- HHH000026: Second-level cache disabled 
+5033 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo -- No LoadTimeWeaver setup: ignoring JPA class transformer 
+5076 [main] INFO  com.zaxxer.hikari.HikariDataSource -- HikariPool-1 - Starting... 
+5382 [main] INFO  com.zaxxer.hikari.pool.HikariPool -- HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3be80ece 
+5384 [main] INFO  com.zaxxer.hikari.HikariDataSource -- HikariPool-1 - Start completed. 
+5438 [main] WARN  org.hibernate.orm.deprecation -- HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default) 
+6593 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator -- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration) 
+6659 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -- Initialized JPA EntityManagerFactory for persistence unit 'default' 
+7637 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration -- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+8076 [main] INFO  o.a.coyote.http11.Http11NioProtocol -- Starting ProtocolHandler ["http-nio-8080"] 
+8107 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -- Tomcat started on port 8080 (http) with context path '/manage-pix' 
+8120 [main] INFO  b.c.b.m.ManagePixApplicationKt -- Started ManagePixApplicationKt in 7.864 seconds (process running for 8.415) 
+8120 [main] INFO  b.c.b.m.ManagePixApplicationKt -- Started ManagePixApplicationKt in 7.864 seconds (process running for 8.415) 
+13998 [http-nio-8080-exec-2] INFO  o.a.c.c.C.[.[.[/manage-pix] -- Initializing Spring DispatcherServlet 'dispatcherServlet' 
+13998 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet -- Initializing Servlet 'dispatcherServlet' 
+14000 [http-nio-8080-exec-2] INFO  o.s.web.servlet.DispatcherServlet -- Completed initialization in 2 ms 
+14340 [http-nio-8080-exec-2] INFO  b.c.b.m.d.c.validators.PixValidador -- Iniciando a validação das regras de pix internamente... 
+14340 [http-nio-8080-exec-2] INFO  b.c.b.m.d.c.validators.PixValidador -- Iniciando a validação das regras de pix internamente... 
+14342 [http-nio-8080-exec-2] INFO  b.c.b.m.d.c.validators.PixValidador -- Quantidade de mensagens: 1 
+14342 [http-nio-8080-exec-2] INFO  b.c.b.m.d.c.validators.PixValidador -- Quantidade de mensagens: 1 
+14343 [http-nio-8080-exec-2] INFO  b.c.b.m.d.c.validators.PixValidador -- Mensagens: [MensagemDTO(codigo=E013, descricao=Chave Pix 1199455478 inválida. Verique se o 'tipoChavePix' de chave informada é compatível com o valor da 'chavePix' fornecida)] 
+14343 [http-nio-8080-exec-2] INFO  b.c.b.m.d.c.validators.PixValidador -- Mensagens: [MensagemDTO(codigo=E013, descricao=Chave Pix 1199455478 inválida. Verique se o 'tipoChavePix' de chave informada é compatível com o valor da 'chavePix' fornecida)] 
+14343 [http-nio-8080-exec-2] INFO  b.c.b.m.d.c.validators.PixValidador -- Finalizando a validação das regras de chave pix internamente... 
+14343 [http-nio-8080-exec-2] INFO  b.c.b.m.d.c.validators.PixValidador -- Finalizando a validação das regras de chave pix internamente... 
+21745 [http-nio-8080-exec-3] INFO  b.c.b.m.d.c.validators.PixValidador -- Iniciando a validação das regras de pix internamente... 
+21745 [http-nio-8080-exec-3] INFO  b.c.b.m.d.c.validators.PixValidador -- Iniciando a validação das regras de pix internamente... 
+21745 [http-nio-8080-exec-3] INFO  b.c.b.m.d.c.validators.PixValidador -- Quantidade de mensagens: 1 
+21745 [http-nio-8080-exec-3] INFO  b.c.b.m.d.c.validators.PixValidador -- Quantidade de mensagens: 1 
+21745 [http-nio-8080-exec-3] INFO  b.c.b.m.d.c.validators.PixValidador -- Mensagens: [MensagemDTO(codigo=E013, descricao=Chave Pix 1199455478 inválida. Verique se o 'tipoChavePix' de chave informada é compatível com o valor da 'chavePix' fornecida)] 
+21745 [http-nio-8080-exec-3] INFO  b.c.b.m.d.c.validators.PixValidador -- Mensagens: [MensagemDTO(codigo=E013, descricao=Chave Pix 1199455478 inválida. Verique se o 'tipoChavePix' de chave informada é compatível com o valor da 'chavePix' fornecida)] 
+21745 [http-nio-8080-exec-3] INFO  b.c.b.m.d.c.validators.PixValidador -- Finalizando a validação das regras de chave pix internamente... 
+21745 [http-nio-8080-exec-3] INFO  b.c.b.m.d.c.validators.PixValidador -- Finalizando a validação das regras de chave pix internamente... 
+60511 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean -- Closing JPA EntityManagerFactory for persistence unit 'default' 
+60513 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -- HikariPool-1 - Shutdown initiated... 
+60516 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource -- HikariPool-1 - Shutdown completed. 
+1100 [main] INFO  b.c.b.m.ManagePixApplicationKt -- Starting ManagePixApplicationKt using Java 19.0.2 with PID 26956 (E:\User\francisco\git\manage-pix\build\classes\kotlin\main started by Francisco Araujo in E:\User\francisco\git\manage-pix) 
+1104 [main] DEBUG b.c.b.m.ManagePixApplicationKt -- Running with Spring Boot v3.2.3, Spring v6.1.4 
+1106 [main] INFO  b.c.b.m.ManagePixApplicationKt -- No active profile set, falling back to 1 default profile: "default" 
+7370 [main] INFO  b.c.b.m.ManagePixApplicationKt -- Started ManagePixApplicationKt in 7.112 seconds (process running for 7.691) 
+38676 [http-nio-8080-exec-2] INFO  b.c.b.m.d.c.validators.PixValidador -- Iniciando a validação das regras de pix internamente... 
+38679 [http-nio-8080-exec-2] INFO  b.c.b.m.d.c.validators.PixValidador -- Quantidade de mensagens: 1 
+38680 [http-nio-8080-exec-2] INFO  b.c.b.m.d.c.validators.PixValidador -- Mensagens: [MensagemDTO(codigo=E013, descricao=Chave Pix 1199455478 inválida. Verique se o 'tipoChavePix' de chave informada é compatível com o valor da 'chavePix' fornecida)] 
+38680 [http-nio-8080-exec-2] INFO  b.c.b.m.d.c.validators.PixValidador -- Finalizando a validação das regras de chave pix internamente... 
+44808 [http-nio-8080-exec-4] INFO  b.c.b.m.d.c.validators.PixValidador -- Iniciando a validação das regras de pix internamente... 
+44808 [http-nio-8080-exec-4] INFO  b.c.b.m.d.c.validators.PixValidador -- Quantidade de mensagens: 1 
+44809 [http-nio-8080-exec-4] INFO  b.c.b.m.d.c.validators.PixValidador -- Mensagens: [MensagemDTO(codigo=E013, descricao=Chave Pix 1199455478 inválida. Verique se o 'tipoChavePix' de chave informada é compatível com o valor da 'chavePix' fornecida)] 
+44809 [http-nio-8080-exec-4] INFO  b.c.b.m.d.c.validators.PixValidador -- Finalizando a validação das regras de chave pix internamente... 
+51090 [http-nio-8080-exec-5] INFO  b.c.b.m.d.c.validators.PixValidador -- Iniciando a validação das regras de pix internamente... 
+51090 [http-nio-8080-exec-5] INFO  b.c.b.m.d.c.validators.PixValidador -- Quantidade de mensagens: 1 
+51090 [http-nio-8080-exec-5] INFO  b.c.b.m.d.c.validators.PixValidador -- Mensagens: [MensagemDTO(codigo=E013, descricao=Chave Pix 1199455478 inválida. Verique se o 'tipoChavePix' de chave informada é compatível com o valor da 'chavePix' fornecida)] 
+51090 [http-nio-8080-exec-5] INFO  b.c.b.m.d.c.validators.PixValidador -- Finalizando a validação das regras de chave pix internamente... 
+51981 [http-nio-8080-exec-6] INFO  b.c.b.m.d.c.validators.PixValidador -- Iniciando a validação das regras de pix internamente... 
+51981 [http-nio-8080-exec-6] INFO  b.c.b.m.d.c.validators.PixValidador -- Quantidade de mensagens: 1 
+51981 [http-nio-8080-exec-6] INFO  b.c.b.m.d.c.validators.PixValidador -- Mensagens: [MensagemDTO(codigo=E013, descricao=Chave Pix 1199455478 inválida. Verique se o 'tipoChavePix' de chave informada é compatível com o valor da 'chavePix' fornecida)] 
+51981 [http-nio-8080-exec-6] INFO  b.c.b.m.d.c.validators.PixValidador -- Finalizando a validação das regras de chave pix internamente... 
+59744 [http-nio-8080-exec-3] INFO  b.c.b.m.d.c.validators.PixValidador -- Iniciando a validação das regras de pix internamente... 
+59744 [http-nio-8080-exec-3] INFO  b.c.b.m.d.c.validators.PixValidador -- Quantidade de mensagens: 1 
+59744 [http-nio-8080-exec-3] INFO  b.c.b.m.d.c.validators.PixValidador -- Mensagens: [MensagemDTO(codigo=E013, descricao=Chave Pix 1199455478 inválida. Verique se o 'tipoChavePix' de chave informada é compatível com o valor da 'chavePix' fornecida)] 
+59744 [http-nio-8080-exec-3] INFO  b.c.b.m.d.c.validators.PixValidador -- Finalizando a validação das regras de chave pix internamente... 
+60580 [http-nio-8080-exec-7] INFO  b.c.b.m.d.c.validators.PixValidador -- Iniciando a validação das regras de pix internamente... 
+60581 [http-nio-8080-exec-7] INFO  b.c.b.m.d.c.validators.PixValidador -- Quantidade de mensagens: 1 
+60582 [http-nio-8080-exec-7] INFO  b.c.b.m.d.c.validators.PixValidador -- Mensagens: [MensagemDTO(codigo=E013, descricao=Chave Pix 1199455478 inválida. Verique se o 'tipoChavePix' de chave informada é compatível com o valor da 'chavePix' fornecida)] 
+60582 [http-nio-8080-exec-7] INFO  b.c.b.m.d.c.validators.PixValidador -- Finalizando a validação das regras de chave pix internamente... 
