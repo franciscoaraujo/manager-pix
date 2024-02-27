@@ -9,6 +9,7 @@ import br.com.bytebuilder.managepix.domain.repository.ManagePixRepository
 import jakarta.transaction.Transactional
 import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
+import java.math.BigInteger
 import java.util.*
 
 @Service
@@ -16,9 +17,7 @@ class ManagePixService(private val managePixRepository: ManagePixRepository, pri
 
     @Transactional
     fun createPix(pix: PixDTO): PixDTO {
-
         var mensagens = pixValidador.validarRegradDePix(pix)
-
         if (mensagens.size > 0) {
             pix.setMensagem(mensagens)
             return pix
@@ -35,5 +34,16 @@ class ManagePixService(private val managePixRepository: ManagePixRepository, pri
             toDto.setMensagem(Arrays.asList(MensagemDTO("S001", "Chave Pix Cadastra e Ativa com Sucesso.")))
             return toDto
         }
+    }
+
+    fun recoveryPix(cdPessoaEstabelecimento: BigInteger): List<PixDTO> {
+        val listPixReturn = mutableListOf<PixDTO>()
+        managePixRepository.findByCdPessoaEstabelecimento(cdPessoaEstabelecimento).let {
+            it.forEach { entityOut ->
+                val toDto = PixDTO.ObjectMapper.toDto(entityOut)
+                listPixReturn.add(toDto)
+            }
+        }
+        return listPixReturn;
     }
 }

@@ -8,7 +8,9 @@ import java.math.BigInteger
 @Repository
 interface ManagePixRepository : JpaRepository<PixEntity, BigInteger> {
 
-    fun findByCdPessoaEstabelecimento(cdPessoaEstabelecimento: BigInteger): PixEntity
-
     fun findByCdPessoaEstabelecimentoAndStatusPix(cdPessoaEstabelecimento: BigInteger, statusPix: Boolean): PixEntity
+
+    fun findByCdPessoaEstabelecimento(cdPessoaEstabelecimento: BigInteger): List<PixEntity>
+
+
 }
