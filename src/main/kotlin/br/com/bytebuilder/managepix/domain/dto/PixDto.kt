@@ -45,7 +45,6 @@ data class PixDto(
     //getters
 
     fun getcdChavePix() = this.cdChavePix
-
     fun getcdPessoaEstabelecimento() = this.cdPessoaEstabelecimento
     fun getStatusPix() = this.statusPix
     fun getTipoChavePix() = this.tipoChavePix
