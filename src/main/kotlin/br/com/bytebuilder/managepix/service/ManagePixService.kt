@@ -1,13 +1,10 @@
 package br.com.bytebuilder.managepix.service
 
-import br.com.bytebuilder.managepix.domain.components.validators.AbstractValidator.Companion.CODIGO_ERRO_VALIDACAO_NIVEL_2
 import br.com.bytebuilder.managepix.domain.components.validators.PixValidador
-import br.com.bytebuilder.managepix.domain.dto.MensagemDTO
-import br.com.bytebuilder.managepix.domain.dto.PixDTO
-import br.com.bytebuilder.managepix.domain.entity.PixEntity
+import br.com.bytebuilder.managepix.domain.dto.MensagemDto
+import br.com.bytebuilder.managepix.domain.dto.PixDto
 import br.com.bytebuilder.managepix.domain.repository.ManagePixRepository
 import jakarta.transaction.Transactional
-import org.springframework.beans.factory.annotation.Autowired
 import org.springframework.stereotype.Service
 import java.math.BigInteger
 import java.util.*
@@ -16,7 +13,7 @@ import java.util.*
 class ManagePixService(private val managePixRepository: ManagePixRepository, private val pixValidador: PixValidador) {
 
     @Transactional
-    fun createPix(pix: PixDTO): PixDTO {
+    fun createPix(pix: PixDto): PixDto {
         var mensagens = pixValidador.validarRegradDePix(pix)
         if (mensagens.size > 0) {
             pix.setMensagem(mensagens)
@@ -28,19 +25,19 @@ class ManagePixService(private val managePixRepository: ManagePixRepository, pri
                     managePixRepository.save(it)
                 }
             }
-            var toEntity = PixDTO.ObjectMapper.toEntity(pix)
+            var toEntity = PixDto.ObjectMapper.toEntity(pix)
             var save = managePixRepository.save(toEntity)
-            var toDto = PixDTO.ObjectMapper.toDto(save)
-            toDto.setMensagem(Arrays.asList(MensagemDTO("S001", "Chave Pix Cadastra e Ativa com Sucesso.")))
+            var toDto = PixDto.ObjectMapper.toDto(save)
+            toDto.setMensagem(Arrays.asList(MensagemDto("S001", "Chave Pix Cadastra e Ativa com Sucesso.")))
             return toDto
         }
     }
 
-    fun recoveryPix(cdPessoaEstabelecimento: BigInteger): List<PixDTO> {
-        val listPixReturn = mutableListOf<PixDTO>()
+    fun recoveryPix(cdPessoaEstabelecimento: BigInteger): List<PixDto> {
+        val listPixReturn = mutableListOf<PixDto>()
         managePixRepository.findByCdPessoaEstabelecimento(cdPessoaEstabelecimento).let {
             it.forEach { entityOut ->
-                val toDto = PixDTO.ObjectMapper.toDto(entityOut)
+                val toDto = PixDto.ObjectMapper.toDto(entityOut)
                 listPixReturn.add(toDto)
             }
         }

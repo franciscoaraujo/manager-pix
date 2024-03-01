@@ -9,23 +9,22 @@ import java.time.LocalDate
 @Entity
 @Table(name = "pix_entity")
 class PixEntity {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private var cdChavePix: Int? = null
-    private var cdPessoaEstabelecimento: BigInteger? = null
-    private var statusPix: Boolean? = null
-    private var tipoChavePix: TipoChavePix? = null
-    private var chavePix: String? = null
+    private var cdChavePix: Int
+    private var cdPessoaEstabelecimento: BigInteger
+    private var statusPix: Boolean
+    private var tipoChavePix: TipoChavePix
+    private var chavePix: String
     private var dtInicioVigencia: LocalDate? = null
     private var dtFimVigencia: LocalDate? = null
 
     constructor(
-        cdChavePix: Int?,
-        cdPessoaEstabelecimento: BigInteger?,
-        statusPix: Boolean?,
-        tipoChavePix: TipoChavePix?,
-        chavePix: String?,
+        cdChavePix: Int,
+        cdPessoaEstabelecimento: BigInteger,
+        statusPix: Boolean,
+        tipoChavePix: TipoChavePix,
+        chavePix: String,
         dtInicioVigencia: LocalDate?,
         dtFimVigencia: LocalDate?
     ) {
@@ -38,37 +37,21 @@ class PixEntity {
         this.dtFimVigencia = dtFimVigencia
     }
 
-    constructor()
+    fun getcdPessoaEstabelecimento() = this.cdPessoaEstabelecimento
 
-    fun getcdPessoaEstabelecimento(): BigInteger? {
-        return cdPessoaEstabelecimento
-    }
+    fun getcdChavePix() = this.cdChavePix
 
-    fun getChavePix(): String? {
-        return chavePix
-    }
+    fun getStatusPix() = this.statusPix
 
-    fun getDtFimVigencia(): LocalDate? {
-        return dtFimVigencia
-    }
+    fun getTipoChavePix() = this.tipoChavePix
 
-    fun getDtInicioVigencia(): LocalDate? {
-        return dtInicioVigencia
-    }
+    fun getChavePix() = this.chavePix
 
-    fun getTipoChavePix(): TipoChavePix? {
-        return tipoChavePix
-    }
+    fun getDtFimVigencia() = this.dtFimVigencia
 
-    fun getStatusPix(): Boolean? {
-        return statusPix
-    }
+    fun getDtInicioVigencia() = this.dtInicioVigencia
 
-    fun getcdChavePix(): Int? {
-        return cdChavePix
-    }
-
-    fun setStatusPix(statusPix: Boolean?) {
+    fun setStatusPix(statusPix: Boolean) {
         this.statusPix = statusPix
     }
 }

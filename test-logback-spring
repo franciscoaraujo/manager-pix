@@ -236,3 +236,64 @@
 72408 [http-nio-8080-exec-4] INFO  b.c.b.m.d.c.validators.PixValidador -- Quantidade de mensagens: 0 
 72408 [http-nio-8080-exec-4] INFO  b.c.b.m.d.c.validators.PixValidador -- Mensagens: [] 
 72408 [http-nio-8080-exec-4] INFO  b.c.b.m.d.c.validators.PixValidador -- Finalizando a validação das regras de chave pix internamente... 
+1082 [main] INFO  b.c.b.m.ManagePixApplicationKt -- Starting ManagePixApplicationKt using Java 19.0.2 with PID 59028 (E:\User\francisco\git\manage-pix\build\classes\kotlin\main started by Francisco Araujo in E:\User\francisco\git\manage-pix) 
+1086 [main] DEBUG b.c.b.m.ManagePixApplicationKt -- Running with Spring Boot v3.2.3, Spring v6.1.4 
+1087 [main] INFO  b.c.b.m.ManagePixApplicationKt -- The following 1 profile is active: "local" 
+8200 [main] INFO  b.c.b.m.ManagePixApplicationKt -- Started ManagePixApplicationKt in 7.896 seconds (process running for 9.726) 
+17026 [http-nio-8080-exec-2] INFO  b.c.b.m.d.c.validators.PixValidador -- Iniciando a validação das regras de pix internamente... 
+17028 [http-nio-8080-exec-2] INFO  b.c.b.m.d.c.validators.PixValidador -- Quantidade de mensagens: 0 
+17028 [http-nio-8080-exec-2] INFO  b.c.b.m.d.c.validators.PixValidador -- Mensagens: [] 
+17028 [http-nio-8080-exec-2] INFO  b.c.b.m.d.c.validators.PixValidador -- Finalizando a validação das regras de chave pix internamente... 
+960  [main] INFO  b.c.b.m.ManagePixApplicationKt -- Starting ManagePixApplicationKt using Java 19.0.2 with PID 70964 (E:\User\francisco\git\manage-pix\build\classes\kotlin\main started by Francisco Araujo in E:\User\francisco\git\manage-pix) 
+963  [main] DEBUG b.c.b.m.ManagePixApplicationKt -- Running with Spring Boot v3.2.3, Spring v6.1.4 
+964  [main] INFO  b.c.b.m.ManagePixApplicationKt -- The following 1 profile is active: "local" 
+6989 [main] INFO  b.c.b.m.ManagePixApplicationKt -- Started ManagePixApplicationKt in 6.72 seconds (process running for 7.302) 
+45723 [http-nio-8080-exec-3] INFO  b.c.b.m.d.c.validators.PixValidador -- Iniciando a validação das regras de pix internamente... 
+45725 [http-nio-8080-exec-3] INFO  b.c.b.m.d.c.validators.PixValidador -- Quantidade de mensagens: 0 
+45725 [http-nio-8080-exec-3] INFO  b.c.b.m.d.c.validators.PixValidador -- Mensagens: [] 
+45725 [http-nio-8080-exec-3] INFO  b.c.b.m.d.c.validators.PixValidador -- Finalizando a validação das regras de chave pix internamente... 
+1005 [main] INFO  b.c.b.m.ManagePixApplicationKt -- Starting ManagePixApplicationKt using Java 19.0.2 with PID 39972 (E:\User\francisco\git\manage-pix\build\classes\kotlin\main started by Francisco Araujo in E:\User\francisco\git\manage-pix) 
+1009 [main] DEBUG b.c.b.m.ManagePixApplicationKt -- Running with Spring Boot v3.2.3, Spring v6.1.4 
+1011 [main] INFO  b.c.b.m.ManagePixApplicationKt -- The following 1 profile is active: "local" 
+7777 [main] INFO  b.c.b.m.ManagePixApplicationKt -- Started ManagePixApplicationKt in 7.516 seconds (process running for 8.094) 
+970  [main] INFO  b.c.b.m.ManagePixApplicationKt -- Starting ManagePixApplicationKt using Java 19.0.2 with PID 35624 (E:\User\francisco\git\manage-pix\build\classes\kotlin\main started by Francisco Araujo in E:\User\francisco\git\manage-pix) 
+975  [main] DEBUG b.c.b.m.ManagePixApplicationKt -- Running with Spring Boot v3.2.3, Spring v6.1.4 
+977  [main] INFO  b.c.b.m.ManagePixApplicationKt -- The following 1 profile is active: "local" 
+6826 [main] INFO  b.c.b.m.ManagePixApplicationKt -- Started ManagePixApplicationKt in 6.548 seconds (process running for 7.128) 
+945  [main] INFO  b.c.b.m.ManagePixApplicationKt -- Starting ManagePixApplicationKt using Java 19.0.2 with PID 47640 (E:\User\francisco\git\manage-pix\build\classes\kotlin\main started by Francisco Araujo in E:\User\francisco\git\manage-pix) 
+953  [main] DEBUG b.c.b.m.ManagePixApplicationKt -- Running with Spring Boot v3.2.3, Spring v6.1.4 
+954  [main] INFO  b.c.b.m.ManagePixApplicationKt -- The following 1 profile is active: "local" 
+6748 [main] INFO  b.c.b.m.ManagePixApplicationKt -- Started ManagePixApplicationKt in 6.493 seconds (process running for 7.049) 
+36838 [http-nio-8080-exec-3] INFO  b.c.b.m.d.c.validators.PixValidador -- Iniciando a validação das regras de pix internamente... 
+36839 [http-nio-8080-exec-3] INFO  b.c.b.m.d.c.validators.PixValidador -- Quantidade de mensagens: 0 
+36839 [http-nio-8080-exec-3] INFO  b.c.b.m.d.c.validators.PixValidador -- Mensagens: [] 
+36839 [http-nio-8080-exec-3] INFO  b.c.b.m.d.c.validators.PixValidador -- Finalizando a validação das regras de chave pix internamente... 
+1047 [main] INFO  b.c.b.m.ManagePixApplicationKt -- Starting ManagePixApplicationKt using Java 19.0.2 with PID 10940 (E:\User\francisco\git\manage-pix\build\classes\kotlin\main started by Francisco Araujo in E:\User\francisco\git\manage-pix) 
+1051 [main] DEBUG b.c.b.m.ManagePixApplicationKt -- Running with Spring Boot v3.2.3, Spring v6.1.4 
+1052 [main] INFO  b.c.b.m.ManagePixApplicationKt -- The following 1 profile is active: "local" 
+7096 [main] INFO  b.c.b.m.ManagePixApplicationKt -- Started ManagePixApplicationKt in 6.761 seconds (process running for 7.477) 
+80964 [http-nio-8080-exec-3] INFO  b.c.b.m.d.c.validators.PixValidador -- Iniciando a validação das regras de pix internamente... 
+80965 [http-nio-8080-exec-3] INFO  b.c.b.m.d.c.validators.PixValidador -- Quantidade de mensagens: 0 
+80965 [http-nio-8080-exec-3] INFO  b.c.b.m.d.c.validators.PixValidador -- Mensagens: [] 
+80965 [http-nio-8080-exec-3] INFO  b.c.b.m.d.c.validators.PixValidador -- Finalizando a validação das regras de chave pix internamente... 
+1456 [main] INFO  b.c.b.m.ManagePixApplicationKt -- Starting ManagePixApplicationKt using Java 19.0.2 with PID 58824 (E:\User\francisco\git\manage-pix\build\classes\kotlin\main started by Francisco Araujo in E:\User\francisco\git\manage-pix) 
+1461 [main] DEBUG b.c.b.m.ManagePixApplicationKt -- Running with Spring Boot v3.2.3, Spring v6.1.4 
+1463 [main] INFO  b.c.b.m.ManagePixApplicationKt -- The following 1 profile is active: "local" 
+9799 [main] INFO  b.c.b.m.ManagePixApplicationKt -- Started ManagePixApplicationKt in 9.321 seconds (process running for 10.399) 
+1081 [main] INFO  b.c.b.m.ManagePixApplicationKt -- Starting ManagePixApplicationKt using Java 19.0.2 with PID 32292 (E:\User\francisco\git\manage-pix\build\classes\kotlin\main started by Francisco Araujo in E:\User\francisco\git\manage-pix) 
+1085 [main] DEBUG b.c.b.m.ManagePixApplicationKt -- Running with Spring Boot v3.2.3, Spring v6.1.4 
+1087 [main] INFO  b.c.b.m.ManagePixApplicationKt -- The following 1 profile is active: "local" 
+925  [main] INFO  b.c.b.m.ManagePixApplicationKt -- Starting ManagePixApplicationKt using Java 19.0.2 with PID 71396 (E:\User\francisco\git\manage-pix\build\classes\kotlin\main started by Francisco Araujo in E:\User\francisco\git\manage-pix) 
+931  [main] DEBUG b.c.b.m.ManagePixApplicationKt -- Running with Spring Boot v3.2.3, Spring v6.1.4 
+933  [main] INFO  b.c.b.m.ManagePixApplicationKt -- The following 1 profile is active: "local" 
+1231 [main] INFO  b.c.b.m.ManagePixApplicationKt -- Starting ManagePixApplicationKt using Java 19.0.2 with PID 47624 (E:\User\francisco\git\manage-pix\build\classes\kotlin\main started by Francisco Araujo in E:\User\francisco\git\manage-pix) 
+1235 [main] DEBUG b.c.b.m.ManagePixApplicationKt -- Running with Spring Boot v3.2.3, Spring v6.1.4 
+1236 [main] INFO  b.c.b.m.ManagePixApplicationKt -- The following 1 profile is active: "local" 
+1249 [main] INFO  b.c.b.m.ManagePixApplicationKt -- Starting ManagePixApplicationKt using Java 19.0.2 with PID 41332 (E:\User\francisco\git\manage-pix\build\classes\kotlin\main started by Francisco Araujo in E:\User\francisco\git\manage-pix) 
+1252 [main] DEBUG b.c.b.m.ManagePixApplicationKt -- Running with Spring Boot v3.2.3, Spring v6.1.4 
+1254 [main] INFO  b.c.b.m.ManagePixApplicationKt -- The following 1 profile is active: "local" 
+11364 [main] INFO  b.c.b.m.ManagePixApplicationKt -- Started ManagePixApplicationKt in 10.992 seconds (process running for 14.561) 
+1029 [main] INFO  b.c.b.m.ManagePixApplicationKt -- Starting ManagePixApplicationKt using Java 19.0.2 with PID 32000 (E:\User\francisco\git\manage-pix\build\classes\kotlin\main started by Francisco Araujo in E:\User\francisco\git\manage-pix) 
+1032 [main] DEBUG b.c.b.m.ManagePixApplicationKt -- Running with Spring Boot v3.2.3, Spring v6.1.4 
+1033 [main] INFO  b.c.b.m.ManagePixApplicationKt -- The following 1 profile is active: "local" 
+9402 [main] INFO  b.c.b.m.ManagePixApplicationKt -- Started ManagePixApplicationKt in 9.124 seconds (process running for 9.78) 

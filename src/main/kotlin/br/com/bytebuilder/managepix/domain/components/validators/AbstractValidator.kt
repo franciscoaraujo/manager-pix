@@ -1,8 +1,8 @@
 package br.com.bytebuilder.managepix.domain.components.validators
 
 
-import br.com.bytebuilder.managepix.domain.dto.MensagemDTO
-import br.com.bytebuilder.managepix.domain.dto.PixDTO
+import br.com.bytebuilder.managepix.domain.dto.MensagemDto
+import br.com.bytebuilder.managepix.domain.dto.PixDto
 import br.com.bytebuilder.managepix.domain.enums.TipoChavePix
 import br.com.bytebuilder.managepix.domain.utils.DateUtils
 import org.slf4j.Logger
@@ -24,16 +24,16 @@ abstract class AbstractValidator(
     @Autowired
     private lateinit var dateUtils: DateUtils
 
-    open fun validarRegradDePix(pixDTO: PixDTO): List<MensagemDTO> {
+    open fun validarRegradDePix(pixDTO: PixDto): List<MensagemDto> {
         log.info("Iniciando a validação das regras de pix internamente...")
-        val mensagens: MutableList<MensagemDTO> = ArrayList<MensagemDTO>()
+        val mensagens: MutableList<MensagemDto> = ArrayList<MensagemDto>()
 
         //validando se é um email válido
         if (pixDTO.getTipoChavePix()
                 ?.equals(TipoChavePix.EMAIL) ?: false && !emailValidator.isValidEmail(pixDTO.getChavePix())
         ) {
             mensagens.add(
-                MensagemDTO(
+                MensagemDto(
                     CODIGO_ERRO_VALIDACAO_NIVEL_2,
                     java.lang.String.format(CHAVE_PIX_INVALIDA, pixDTO.getChavePix())
                 )
@@ -44,7 +44,7 @@ abstract class AbstractValidator(
             && !cpfValidator.isValidCPF(pixDTO.getChavePix())
         ) {
             mensagens.add(
-                MensagemDTO(
+                MensagemDto(
                     CODIGO_ERRO_VALIDACAO_NIVEL_2,
                     java.lang.String.format(CHAVE_PIX_INVALIDA, pixDTO.getChavePix())
                 )
@@ -55,7 +55,7 @@ abstract class AbstractValidator(
             && !cpfValidator.isValidCPF(pixDTO.getChavePix())
         ) {
             mensagens.add(
-                MensagemDTO(
+                MensagemDto(
                     CODIGO_ERRO_VALIDACAO_NIVEL_2,
                     java.lang.String.format(CHAVE_PIX_INVALIDA, pixDTO.getChavePix())
                 )
@@ -65,7 +65,7 @@ abstract class AbstractValidator(
             && !celularValidador.isValidCelular(pixDTO.getChavePix())
         ) {
             mensagens.add(
-                MensagemDTO(
+                MensagemDto(
                     CODIGO_ERRO_VALIDACAO_NIVEL_2,
                     java.lang.String.format(CHAVE_PIX_INVALIDA, pixDTO.getChavePix())
                 )
@@ -76,7 +76,7 @@ abstract class AbstractValidator(
             && !chavePixAleatoriaValidador.isValidChavePixAleatoria(pixDTO.getChavePix())
         ) {
             mensagens.add(
-                MensagemDTO(
+                MensagemDto(
                     CODIGO_ERRO_VALIDACAO_NIVEL_2,
                     java.lang.String.format(CHAVE_PIX_INVALIDA, pixDTO.getChavePix())
                 )
